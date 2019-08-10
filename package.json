@@ -1,0 +1,32 @@
+{
+  "name": "nossy-wiki",
+  "version": "1.0.0",
+  "description": "A node express server with a redis cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyekunle-Mark/nossy-wiki.git"
+  },
+  "keywords": [
+    "redis",
+    "cache"
+  ],
+  "author": "oyekunle-mark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oyekunle-Mark/nossy-wiki/issues"
+  },
+  "homepage": "https://github.com/Oyekunle-Mark/nossy-wiki#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1"
+  }
+}
