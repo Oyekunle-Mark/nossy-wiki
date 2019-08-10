@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const logger = require('morgan');
 
 const server = express();
+const searchRouter = require('../search');
 
 server.use(express.json());
 server.use(cors());
@@ -17,7 +18,9 @@ server.get('/', (req, res) =>
   }),
 );
 
-server.get((req, res) =>
+server.use('/api/search', searchRouter);
+
+server.use((req, res) =>
   res.status(404).json({
     status: 404,
     message: 'Check the URL chief!,',
